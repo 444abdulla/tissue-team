@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISL Qatar Grade 3 💎</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: #fff5f8;
+  color: #59475d;
+}
+
+header {
+  background: linear-gradient(135deg, #ffcce0, #ded5ff, #ccecff);
+  text-align: center;
+  padding: 55px 20px;
+  border-radius: 0 0 45px 45px;
+}
+
+header h1 {
+  font-size: 38px;
+  color: #78527e;
+  margin: 10px;
+}
+
+header p {
+  font-size: 17px;
+}
+
+.sparkle {
+  font-size: 28px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 20px #e9d7e6;
+  text-align: center;
+}
+
+h2 {
+  color: #aa78a9;
+}
+
+.stones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stone {
+  border-radius: 20px;
+  padding: 18px 5px;
+  background: #fff0f6;
+  font-size: 43px;
+}
+
+.stone:nth-child(2) {
+  background: #f0eaff;
+}
+
+.stone:nth-child(3) {
+  background: #e9f7ff;
+}
+
+.stone p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.notice {
+  background: #fff0f1;
+  color: #d65d79;
+  padding: 18px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.meet {
+  background: #f0eaff;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+input {
+  width: 90%;
+  max-width: 350px;
+  padding: 15px;
+  border: 2px solid #e7cde9;
+  border-radius: 15px;
+  font-size: 16px;
+  margin: 10px;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #e9a9d0, #b9a5ed);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+#message {
+  color: #a16ca4;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9efff;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #a17fa6;
+}
+
+@media(max-width: 450px) {
+  header h1 {
+    font-size: 29px;
+  }
+  .stones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="sparkle">✨ 💎 ✨</div>
+  <h1>ISL Qatar Grade 3</h1>
+  <p>♡ The cutest little rock club! ♡</p>
+  <p>Beautiful stones • Happy friends • Sparkles</p>
+</header>
+
+<div class="container">
+
+  <section class="card">
+    <h2>🌸 Welcome to Our Club!</h2>
+    <p>
+      We are ISL Qatar Grade 3!
+      We love collecting, discovering and admiring
+      beautiful polished rocks.
+    </p>
+    <p>Every rock has its own special beauty! 💗</p>
+  </section>
+
+  <section class="card">
+    <h2>💎 Our Pretty Stone Gallery</h2>
+    <div class="stones">
+      <div class="stone">🩷<p>Rose Quartz</p></div>
+      <div class="stone">💜<p>Amethyst</p></div>
+      <div class="stone">💙<p>Blue Gems</p></div>
+      <div class="stone">🤍<p>White Stones</p></div>
+      <div class="stone">💚<p>Green Gems</p></div>
+      <div class="stone">✨<p>Special Rocks</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>📢 Rock Announcement</h2>
+    <div class="notice">
+      🚫 ALL ROCKS ARE OUT OF SALE! 🚫
+    </div>
+    <p>
+      Only the administrator can add new rocks.
+      Stay tuned for new rock updates! 💎
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>📍 Where Can You Meet Us?</h2>
+    <div class="meet">
+      <h3>🏫 ISL Qatar Grade 3</h3>
+      <h2>📍 The Atrium!</h2>
+      <p>Come meet us in the Atrium!</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>🎀 Are You From ISL Qatar?</h2>
+    <p>Type your name and come say hello!</p>
+
+    <input id="name" placeholder="Your name here...">
+    <br>
+    <button onclick="join()">💗 Meet Us!</button>
+
+    <h3 id="message"></h3>
+  </section>
+
+  <section class="card">
+    <h2>👑 Our Visitors</h2>
+    <p>Look who's coming to meet us!</p>
+    <ul id="visitors"></ul>
+  </section>
+
+</div>
+
+<footer>
+  Made with 💗 by ISL Qatar Grade 3
+  <p>✨ Rocks make the world sparkle! ✨</p>
+</footer>
+
+<script>
+let names = [];
+
+function join() {
+  const input = document.getElementById("name");
+  const name = input.value.trim();
+
+  if (!name) {
+    alert("Please enter your name! 💗");
+    return;
+  }
+
+  names.push(name);
+
+  document.getElementById("message").innerText =
+    "Yay, " + name + "! 💗 We will meet you in the ISL Qatar Grade 3 Atrium immediately!";
+
+  const visitors = document.getElementById("visitors");
+  visitors.innerHTML = "";
+
+  names.forEach(person => {
+    const li = document.createElement("li");
+    li.textContent = "🌸 " + person;
+    visitors.appendChild(li);
+  });
+
+  input.value = "";
+}
+</script>
+
+</body>
+</html>
